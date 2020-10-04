@@ -26,5 +26,6 @@ urlpatterns = [
     path('dashboard',views.dashboard),
     path('register1',views.register1),
     path('forgetpass',views.forgetpass),
-    path('show',views.show)
+    path('show',views.show),
+    path('reset',views.reset)
 ]

@@ -118,3 +118,6 @@ def forgetpass(request):
 def show(request):
         user_fetch=User.objects.all()
         return render(request,'show.html',{'userft':user_fetch})
+
+def reset(request):
+        return render(request,'reset.html')
