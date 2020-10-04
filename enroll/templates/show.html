@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if userft %}
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>First Name</th>
+                        <th>Last_Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                {% for usr in userft %}
+                    <tbody>
+                        <tr>
+                            <td>{{usr.id}}</td>
+                            <td>{{usr.username}}</td>
+                            <td>{{usr.first_name}}</td>
+                            <td>{{usr.last_name}}</td>
+                            <td>{{usr.email}}</td>
+                        </tr>
+                    </tbody>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+    {% endif %}
+    {% endblock %}

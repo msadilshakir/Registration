@@ -1,0 +1,25 @@
+
+.no-margin
+{
+  margin: 0px !important;
+}
+
+.no-marginLR {
+    margin-left:0;
+    margin-right:0;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+@media (min-width: 992px) {
+.col-md-6 {
+    width: 28% !important;
+}
+}
+
+a#PP {
+  color: #a01c1c;
+  margin-left: 72px;
+}
